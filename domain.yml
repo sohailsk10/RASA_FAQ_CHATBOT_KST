@@ -1,5 +1,7 @@
-version: "3.1"
-
+version: '3.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
 intents:
   - greet
   - goodbye
@@ -7,7 +9,7 @@ intents:
   - deny
   - mood_great
   - mood_unhappy
-  - bot_challenge
+  #- bot_challenge
   - resources
   - available_resources
   - profiles_sharing
@@ -42,139 +44,241 @@ intents:
   - deal_servers
   - server_management_services
   - AMC
-
+  - ceo_image
+  - address_india
+  - address_uae
+  - contact_number
+  - antivirus
+  - UPS
+  - firewalls
+  - checkpoint_firewall
+  - CCTV_installation
+  - structured_cabling
+  - location
+  - server_installation_services
+  - onsite_service
+  - servers
+  - physical_server
+  - brand
+  - virtual_server
+  - cloud_platform
+  - AI_chatbots
+  - FAQ_chatbot
+  - Dialog_flow
+  - chatbot_customized
+  - WhatsApp_channel
+  - omni-channel_deployment
+  - live_agent
+  - chatbot_analytics
+  - 3rd-party_apps
+  - flow_builder
+  - multilingual_capabilities
+  - voice_conversation
+  - emotional_intelligence
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+    - text: Hey! How are you?
   utter_resources:
-    - text: "Our pool consists of resources in NOC, Network Security, Infra support, Server Management, Cloud Management, Oracle & SQL databases."
-
+    - text: Our pool consists of resources in NOC, Network Security, Infra support, Server Management, Cloud Management, Oracle & SQL databases.
   utter_available_resources:
-    - text: "Depends on the skills requested for"
-
+    - text: Depends on the skills requested for
   utter_profiles_sharing:
-    - text: "24 hours"
-
+    - text: 24 hours
   utter_rate_card:
-    - text: "Sorry, No as it would depend on skills"
-
+    - text: Sorry, No as it would depend on skills
   utter_short_Long_term:
-    - text: "We are open for both."
-
+    - text: We are open for both.
   utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
+    - image: https://i.imgur.com/nGF1K8f.jpg
+      text: 'Here is something to cheer you up:'
   utter_did_that_help:
-  - text: "Did that help you?"
-
+    - text: Did that help you?
   utter_happy:
-  - text: "Great, carry on!"
-
+    - text: Great, carry on!
   utter_goodbye:
-  - text: "Bye"
-
+    - text: Bye
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
-
+    - text: I am a bot, powered by Rasa.
   utter_remote_support:
-    - text: "Yes we do"
+    - text: Yes we do
   utter_Visa:
-    - text: "Depends on the duration of the engagement and other requirements"
+    - text: Depends on the duration of the engagement and other requirements
   utter_bench_size:
-    - text: "We have a pool of resources who can be deputed to your project."
-
+    - text: We have a pool of resources who can be deputed to your project.
   utter_custom_software_cost:
-    - text: "The cost of your software will depend on its requirements, complexity, systems to be integrated and the support needed. We will be happy to discuss your requirements and provide an optimized quote."
+    - text: The cost of your software will depend on its requirements, complexity, systems to be integrated and the support needed. We will be happy to discuss your requirements and provide an optimized quote.
   utter_software_needs:
-    - text: "Physical meeting may not be necessary but one meeting is required to understand your requirements for providing a detailed scope of work."
-
+    - text: Physical meeting may not be necessary but one meeting is required to understand your requirements for providing a detailed scope of work.
   utter_ensure_confidentiality:
-    - text: "Our employees are bound by company Confidentiality and Non-Disclosure clauses.
-Additionally, upon request from customers & sensitivity of the projects, a special development center is created which is inaccessible to others.
-"
+    - text: 'Our employees are bound by company Confidentiality and Non-Disclosure clauses. Additionally, upon request from customers & sensitivity of the projects, a special development center is created which is inaccessible to others. '
   utter_Quality_Reliability:
-    - text: "Our projects are developed using Agile scrum development methodology to ensure high quality deliverables."
-
+    - text: Our projects are developed using Agile scrum development methodology to ensure high quality deliverables.
   utter_support:
-    - text: "We offer a range of on-going support services. Our SLAs can go as low as 2 business hours, but most of our customers rarely need that level of support."
-
+    - text: We offer a range of on-going support services. Our SLAs can go as low as 2 business hours, but most of our customers rarely need that level of support.
   utter_progressed:
-    - text: "We use Agile scrum development methodology. You will be an integral part of sprint planning - from the start during sprint planning and again for the review before the release date."
-
+    - text: We use Agile scrum development methodology. You will be an integral part of sprint planning - from the start during sprint planning and again for the review before the release date.
   utter_owns_software:
-    - text: "Once the project is completed, you own everything that is necessary to build, maintain, or extend the software, such as executable files, scripts, project files, source code, etc."
-
+    - text: Once the project is completed, you own everything that is necessary to build, maintain, or extend the software, such as executable files, scripts, project files, source code, etc.
   utter_project_quotation:
-    - text: "Preparing detailed requirements will help our developers to understand your vision entirely, and help us to give you an accurate quote. It is ideal to make user stories, where you explain the function and the end result you are expecting."
-
+    - text: Preparing detailed requirements will help our developers to understand your vision entirely, and help us to give you an accurate quote. It is ideal to make user stories, where you explain the function and the end result you are expecting.
   utter_software:
-    - text: "•	Artificial Intelligence
-•	Machine Learning
-•	Mobile Development
-"
+    - text: "•\tArtificial Intelligence •\tMachine Learning •\tMobile Development "
   utter_software_products:
-    - text: "•	AI enabled Chatbot
-•	Thermal Screening Enabled applications
-•	Healthcare Management
-•	HR Management
-"
-
+    - text: "•\tAI enabled Chatbot •\tThermal Screening Enabled applications •\tHealthcare Management •\tHR Management "
   utter_dna_snt:
-    - text: "Yes once’s you provide end user details we will apply the DNA, and smart net on end user’s name"
-
+    - text: Yes once’s you provide end user details we will apply the DNA, and smart net on end user’s name
   utter_smartnet:
-    - text: "Yes, it’s smart net enabled."
-
+    - text: Yes, it’s smart net enabled.
   utter_region_product:
-    - text: "our sources are CISCO distributors from UK, Netherland, Australia region and will work in any region."
-
+    - text: our sources are CISCO distributors from UK, Netherland, Australia region and will work in any region.
   utter_product_warranty:
-    - text: "yes it carries the standard CISCO warranty."
-
+    - text: yes it carries the standard CISCO warranty.
   utter_warranty_service:
-    - text: "we pass on the Standard CISCO warranty, but we can help you in extending the warranty by paying the relevant CISCO fee."
-
+    - text: we pass on the Standard CISCO warranty, but we can help you in extending the warranty by paying the relevant CISCO fee.
   utter_delivery_timeline:
-    - text: "It depends on the part number."
-
+    - text: It depends on the part number.
   utter_deliver_outside_uae:
-    - text: "Yes, we can deliver most of the location. Shipping cost will be extra."
-
+    - text: Yes, we can deliver most of the location. Shipping cost will be extra.
   utter_credit_provide:
-    - text: "Depend on the credibility of client."
-
+    - text: Depend on the credibility of client.
   utter_Cisco_service:
-    - text: "Yes, we do."
-
+    - text: Yes, we do.
   utter_cisco_technical_support:
-    - text: "Yes, we do."
-
+    - text: Yes, we do.
   utter_cisco_product:
-    - text: "Yes, we deal in all CISCO products."
-
+    - text: Yes, we deal in all CISCO products.
   utter_laptop:
-    - text: "Yes, we do sell of all brands"
-
+    - text: Yes, we do sell of all brands
   utter_deal_servers:
-    - text: "Yes, we do sell of all brands"
-
+    - text: Yes, we do sell of all brands
   utter_server_management_services:
-    - text: "Yes, we have resources to address these needs both remotely & onsite."
-
+    - text: Yes, we have resources to address these needs both remotely & onsite.
   utter_AMC:
-    - text: "Yes, we do"
-
+    - text: Yes, we do
   utter_charge_AMC:
-    - text: "AMC cost will depend on the services to be provided and the Hardware to be maintained. Based on initial assessment we can share the estimate.
-    "
+    - text: 'AMC cost will depend on the services to be provided and the Hardware to be maintained. Based on initial assessment we can share the estimate. '
+  utter_ceo_image:
+    - image: "https://kernelspheretech.com/wp-content/uploads/2020/09/member-6.jpg"
+      text: Imran Kazi is the Founder and Managing Director of KernelSphere Technologies
+  utter_address_india:
+    - text: 17A, Dattani Plaza, Andheri Kurla Road, Saki Naka, Near Safed Pool, Mumbai
+  utter_address_uae:
+    - text: 308-A, 3rd floor, Al Mankhool (BMI) Building, Khalid Bin Waleed Street, Bur Dubai, Dubai
+  utter_contact_number:
+    - text: You can Contact us on +971-50 251 1441
+  utter_UPS:
+    - text: Yes, we have UPS from brands like APC, Vertiv. Kindly share the model number or I can loop my salesperson to guide you with the correct model based on your requirement.
+  utter_antivirus:
+    - text: Yes, we do sell antivirus. We have brands like Symantec, Sophos, McAfee, Trendmicro etc. Let us know the number of users to share quotation.
+  utter_firewalls:
+    - text: Yes, we do have Firewalls with brands like Checkpoint, Sophos, Fortinet, Forcepoint etc.
+  utter_checkpoint_firewall:
+    - text: Could you please share with me the exact model number so my salesperson can share you the quotation? Or if you have any BOQ with you kindly upload here so I can share with the concerned salesperson
+  utter_CCTV_installation:
+    - text: Yes, we can do complete CCTV installation and configuration. Could you help us with the location to do site survey and collect the exact requirements if possible?
+            Else, I can connect you directly with my CCTV team if you have the BOQ and designs ready.
+
+  utter_structured_cabling:
+  - text: Yes, we do have a team for structured cabling, could you please share the location?
+
+  utter_location:
+  - text: is it possible to do a site survey to provide you with the exact quotation with correct scope of work? If Yes, we can send the technician based on your availability.
+
+  utter_server_installation_services:
+  - text: Yes, we have a team for doing installation and professional services related to servers. Do you need onsite service or remote service?
+
+  utter_onsite_service:
+  - text: to provide you with an installation and configuration charges, kindly provide us with below details
+              A)Location (within Dubai city limits or outside)
+              B)Configuration scope of work
+              C)Total number of servers
+
+  utter_servers:
+  - text: Yes, we do deal in servers. Do you need physical server or virtual servers?
+
+  utter_physical_server:
+  - text: Which brand you are looking for?
+
+  utter_brand:
+  - text: we have brands like HPE, Dell EMC, Lenovo, Supermicro etc. Kindly share the brand and specifications so I could share your requirement with my Salesperson.
+
+  utter_virtual_server:
+  - text: Sure, which cloud platform you would like to go with? Azure or AWS?
+
+  utter_cloud_platform:
+  - text: Kindly share the configurations like RAM, Processor, Storage so my salesperson can share with you an estimated cost.
+
+  utter_AI_chatbots:
+    - text:  AI Chatbots are basically 2 types
+             1)FAQ type
+             2)Dialog flow or orchestrated conversational type
+
+
+  utter_FAQ_chatbot:
+    - text: FAQ type of chatbot is the chatbot where in a user asks a question and there is only one answer. Good for websites having FAQ automated through AI chatbot. Instead of manually adding and updating FAQs, you can simply load your knowledge base to the chatbot. The chatbot parses through the information and can provide a suitable answer within seconds.
+
+  utter_Dialog_flow:
+    - text:  Dialog flow or orchestrated conversational type AI chatbot is where in the user asks a question and dialog flow is triggered for example a user asks on a retail outlet website that he wants to see white shirt. This question triggers a dialog flow of sales where in the AI chatbot asks what type of shirt i.e. formal etc, once the type is selected by the user then AI chatbot asks what type of clothing and then what size and finally showing the product landing page. This can also be applied to technical manuals, bank processes, any industry.
+
+  utter_chatbot_customized:
+    - text: Every business is built different. They have different integrations, different apps, different workflows and require customized solutions for everything.
+            Our platform is just built for that. Pick and chatbot, any domain, any industry - our chatbots are ready to be deployed. And we’ll do quick customizations for you and get your bot up and running in less than 6 weeks.
+            PS:- Our tech team loves to customize the bot for the most unique solutions, and they’ll be happy to customize your bot as well.
+            Chatbots can collect user data and function as per customer needs and behavioral patterns with the help of AI, making the entire customer journey more personalized and customized. Mastering the art of conversation is of utmost importance.
+
+
+  utter_WhatsApp_channel:
+    - text: With 2 Billion+ users and an open rate of 98%, WhatsApp is the leading channel for businesses for all their customer conversations.
+            Brands are using WhatsApp to generate more leads, offer customer support, answer repetitive queries, automate sales processes, and much more!
+            Ecommerce stores can showcase & sell all their products online by leveraging WhatsApp commerce.
+            A chatbot platform that’ll allow you to deploy on WhatsApp and generate WhatsApp links & QR codes for the customers to initiate conversations with the brand, will help you generate more sales & boost revenue.
+
+
+  utter_omni-channel_deployment:
+    - text: Your customer first messages you on Email.
+            Then they message you on Instagram.
+            Then they create a new Twitter account - and then again tag you in a Tweet.
+            They’re talking about the same thing on 3 different channels. However, do your agents know that these 3 customers are the same? Do they have the context?
+            99% of people who read this - answer with NO.
+            That’s the problem we solve. We stitch conversations from all channels and bring them under 1 roof - so your agents have the context before they get on a call with your customer.
+            WhatsApp, Facebook, Twitter, Telegram - all of these have become the means of corporate survival. Being absent on social media is like turning your back on 71% of your customers. Therefore, you must deploy your chatbot across channels. Because customers can reach out to you on any platform and would love to connect with you across platforms that they use.
+            KernelSphere made it easier through our dashboard, empowering conversations across 14+ channels and stitching them into a single dashboard, providing an easy gateway for your customers to engage with your business. Most chatbots are not truly omnichannel, which makes this one of the more advanced chatbot features.
+
+
+  utter_live_agent:
+    - text: Chatbots are advanced and smart to handle customer conversations of any nature. However, there are situations where bots fail, and human intervention is needed. In such cases, a well-defined fallback helps the bot to transfer the chat to the right human agent.
+            The fallbacks need to be defined for two scenarios:- (i) when the bot finds the query complex and (ii) when users prefer to interact with the support rep.
+
+
+  utter_chatbot_analytics:
+    - text: Chatbot analytics can help in knowing your customers in detail and leading with data. Using this feature, a business can get a deeper understanding of the customers and make better decisions.
+            With the chatbot analytics feature, you can get valuable insights and analyze all the chat conversations handled by your bot. It can help you measure the accuracy of the responses provided by bots to customers.
+            By planning a successful chatbot strategy, you can measure your bot performance and assess the growth of your business.  You can leverage chatbot analytics to track relevant chatbot KPIs to make data-driven decisions and better understand the customer journey.
+            Key chatbot metrics to evaluate your chatbot performance:-
+            Total number of users:- The total number of users who interacted with chatbots can be traced to get insights on how many customers are using your chatbot.
+            Bounce rate:- It denotes the number of users visitors who enter the website and leave without interacting with your chatbot.
+            Interaction rate:-  Observing the interaction rate KPI can help you measure user engagement during conversations with your chatbot.
+            Fallback Rate (FBR):- The fallback rate will capture insights about the scenarios where the bot is unable to gauge the user request and offer a relevant solution.
+
+
+  utter_3rd-party_apps:
+    - text: Integrate the chatbot with your preferred 3rd-party applications like Salesforce, Zendesk, Google Sheets, and more... Integrating with 3rd-party applications allows businesses to extract or workaround necessary data, analysis, and reports that are important to monitor trends and form business decisions.
+
+  utter_flow_builder:
+    - text: No, not yet, but it is there in product roadmap
+
+  utter_multilingual_capabilities:
+    - text: As the business grows globally, more and more customers expect to interact with business in different languages and dialects of their choice. And for all online stores and businesses spreading worldwide who want to strengthen customer relationships, multilingual engagement becomes a necessity. KernelSphere chatbots can converse in more than 37 international languages providing a wide array of languages to select from.
+
+  utter_voice_conversation:
+    - text: Yes it supports voice conversation and it can be used using Alexa or Google Voice etc
+
+  utter_emotional_intelligence:
+    - text: Whether the customer is angry, confused, or happy - our chatbots can understand their sentiments just like their better half would!
+            Emotional connect helps brands and customers to engage with each other and build a relationship. Since chatbots are the primary interface between your business and customers, it's vital to enable or design chatbots that can build and foster relationships with customers.
+            With the help of sentiment analysis, chatbots can pick up the underlying emotions and intent of customers and respond to them most appropriately. This makes sentiment analysis a critical chatbot feature
 
 
 
-#  utter_bench_size:
-#    - text: "We have a pool of resources who can be deputed to your project."
 
-session_config:
-  session_expiration_time: 60
-  carry_over_slots_to_new_session: true

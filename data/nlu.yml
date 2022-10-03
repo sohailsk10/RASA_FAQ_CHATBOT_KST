@@ -83,12 +83,12 @@ nlu:
     - so saad
     - so sad
 
-- intent: bot_challenge
-  examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+#- intent: bot_challenge
+#  examples: |
+#    - are you a bot?
+#    - are you a human?
+#    - am I talking to a bot?
+#    - am I talking to a human?
 
 - intent: resources
   examples: |
@@ -229,3 +229,147 @@ nlu:
 - intent: charge_AMC
   examples: |
     - How much do you charge for AMC?
+    - What is the charges for AMC?
+
+- intent: ceo_image
+  examples: |
+    - Who is the CEO of kernelsphere technologies?
+    - Who is the Founder of kernelsphere technologies?
+    - Who is the Managing director of kernelsphere technologies?
+
+- intent: address_uae
+  examples: |
+    - What is your location in UAE
+    - UAE location
+    - whats your address in Dubai
+    - whats your address in UAE
+
+- intent: address_india
+  examples: |
+    - What is your location in india
+    - India location
+    - whats your address in India
+
+- intent: contact_number
+  examples: |
+    - How can i contact you?
+    - Whats your contact number?
+    - Contact number
+
+- intent: antivirus
+  examples: |
+    - Do you sell antivirus?
+
+- intent: UPS
+  examples: |
+    - Do you have UPS?
+
+- intent: firewalls
+  examples: |
+    - Do you sell Firewalls?
+    - Do you deal in firewalls?
+
+
+- intent: checkpoint_firewall
+  examples: |
+    - What is the price for checkpoint firewall? Similarly for other brands also.
+
+- intent: CCTV_installation
+  examples: |
+    - Do you have CCTV installation team?
+    - can you do CCTV installation?
+
+- intent: structured_cabling
+  examples: |
+    - Do you do structured cabling?
+
+- intent: location
+  examples: |
+    - the location is in Dubai?
+    - the location is in India?
+
+- intent: server_installation_services
+  examples: |
+    - Do you provide server installation services?
+
+- intent: onsite_service
+  examples: |
+    - could you please share the price for onsite service?
+
+- intent: servers
+  examples: |
+    - Do you deal in servers?
+
+- intent: physical_server
+  examples: |
+    - I need a physical server?
+
+- intent: brand
+  examples: |
+    - which brands do you have?
+
+
+- intent: virtual_server
+  examples: |
+    - I need a virtual server?
+
+- intent: cloud_platform
+  examples: |
+    - Azure
+    - AWS
+
+- intent: AI_chatbots
+  examples: |
+    - What are the different types of AI chat bots?
+
+- intent: FAQ_chatbot
+  examples: |
+    - What is a FAQ type chatbot?
+
+- intent: Dialog_flow
+  examples: |
+    - What is Dialog flow or orchestrated conversational type AI chatbot?
+
+- intent: chatbot_customized
+  examples: |
+    - Can an AI chatbot or chatbot be customized?
+
+- intent: WhatsApp_channel
+  examples: |
+    - Can AI chatbot use WhatsApp as a channel?
+
+- intent: omni-channel_deployment
+  examples: |
+    - Does AI chatbot support easy omni-channel deployment?
+
+- intent: live_agent
+  examples: |
+    - Can AI chatbot handover to live agent during the conversation?
+
+- intent: chatbot_analytics
+  examples: |
+    - Does your AI chatbot have chatbot analytics?
+
+- intent: 3rd-party_apps
+  examples: |
+    -  AI Chatbot support Integration with 3rd-party apps?
+
+- intent: flow_builder
+  examples: |
+    - AI chatbot support or have interactive flow builder?
+
+- intent: multilingual_capabilities
+  examples: |
+    - Does it support multilingual capabilities?
+
+- intent: voice_conversation
+  examples: |
+    - AI chatbot supports voice conversation?
+
+- intent: emotional_intelligence
+  examples: |
+    - AI chatbot sense or is aware of emotional intelligence?
+
+
+
+
